@@ -1,0 +1,67 @@
+/*   GENERAL STYLES   */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+body {
+  height: 100vh;
+  background-color: #1B1B1B;
+  color: #7284A8; }
+
+.button {
+  background-color: #333333;
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+  color: white;
+  border-radius: 5px; }
+
+.btnList {
+  margin: 30px 0 40px;
+  width: 50%;
+  align-self: center; }
+
+/*   HEADER   */
+.mainHeader {
+  padding: 20px; }
+
+/*   SHOW ARTICLES   */
+.showCard {
+  flex-basis: 22%;
+  margin: 15px auto;
+  min-width: 200px;
+  background-color: #333333;
+  padding: 15px;
+  border-radius: 5px; }
+
+.showTitle {
+  flex-basis: 80%;
+  color: white; }
+
+.showRating {
+  flex-basis: 20%;
+  align-self: center; }
+
+.showGenre {
+  flex-basis: 30%; }
+
+.showImg {
+  margin: 10px 0; }
+
+.showDescr {
+  text-align: justify; }
+
+/*   FOOTER   */
+footer {
+  padding: 20px;
+  text-align: center; }
+
+/*# sourceMappingURL=main.css.map */
