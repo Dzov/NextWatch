@@ -1,37 +1,14 @@
-
-
-
-
-<section class="flex flexWrap" ng-controller="MainCtrl">
-  <article class="showCard flexColumn" ng-repeat="x in myShows">
+<section class="flex flexWrap">
+  <article class="showCard flexColumn" ng-repeat="show in myShows | filter:myFilter | orderBy:'Title'">
     <header class=" flexWrap">
       <div class="flex justifyBetween">
-        <h1 class="showTitle">{{x.Title}}</h1>
-        <p class="showRating">{{x.Rating}}</span></p>
+        <h1 class="showTitle">{{show.Title}}</h1>
+        <p class="showRating">{{show.Rating}}</span></p>
       </div>
-      <span class="showGenre">{{x.Genre}}</span>
-      <span class="showYear">{{x.Year}}</span>
+      <span class="showGenre">{{show.Genre}}</span>
+      <span class="showYear">{{show.Year}}</span>
     </header>
-    <img src="img/{{x.Image}}"  height="200" class="showImg selfCenter">
-    <p class="showDescr">{{x.Description}}</p>
+    <img src="img/{{show.Image}}"  height="200" class="showImg selfCenter">
+    <p class="showDescr">{{show.Description}}</p>
   </article>
 </section>
-
-
-<!-- <section class="flex flexWrap">
-  <?php foreach ($shows as $show) { ?>
-  <article class="showCard flexColumn">
-    <header class=" flexWrap">
-      <div class="flex justifyBetween">
-        <h1 class="showTitle"><?= $show['show_title'] ?></h1>
-        <p class="showRating"><?= $show['show_rating']?><span class="ten">/10</span></p>
-      </div>
-      <span class="showGenre"><?= $show['show_genre']?></span>
-      <span class="showYear">(<?= $show['show_year']?>)</span>
-    </header>
-    <img src="img/<?= $show['show_img']?>"  height="200" class="showImg selfCenter">
-    <p class="showDescr"><?= $show['show_descr']?> </p>
-  </article>
-
-  <?php } ?>
-</section> -->
