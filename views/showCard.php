@@ -1,4 +1,24 @@
-<section class="flex flexWrap">
+
+
+
+
+<section class="flex flexWrap" ng-controller="MainCtrl">
+  <article class="showCard flexColumn" ng-repeat="x in myShows">
+    <header class=" flexWrap">
+      <div class="flex justifyBetween">
+        <h1 class="showTitle">{{x.Title}}</h1>
+        <p class="showRating">{{x.Rating}}</span></p>
+      </div>
+      <span class="showGenre">{{x.Genre}}</span>
+      <span class="showYear">{{x.Year}}</span>
+    </header>
+    <img src="img/{{x.Image}}"  height="200" class="showImg selfCenter">
+    <p class="showDescr">{{x.Description}}</p>
+  </article>
+</section>
+
+
+<!-- <section class="flex flexWrap">
   <?php foreach ($shows as $show) { ?>
   <article class="showCard flexColumn">
     <header class=" flexWrap">
@@ -14,4 +34,4 @@
   </article>
 
   <?php } ?>
-</section>
+</section> -->

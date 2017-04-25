@@ -5,8 +5,10 @@
   <title>NextWatch</title>
   <link rel="stylesheet" type="text/css" href="css/flex.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+  <script src="js/controller.js"></script>
 </head>
-<body>
+<body ng-app="myApp">
   <!-- Header -->
   <?php include 'views/header.php' ?>
 
