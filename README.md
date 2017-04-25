@@ -5,10 +5,11 @@ Projet de synthèse mi-formation: https://github.com/wasthishelpful/p20-projet-m
 Réalisation d'un outil de recommandation de série TV 
 
 ### Fonctionnalités: 
-  - Recommandations par genre 
-  - Recommandations par année 
-  - Recommandation au hasard 
-  - Recommdation par note IMDB
+  - Recommandations de séries par 
+   * genre 
+   * année 
+   * note IMDB
+   * au hasard
 
 ### BackOffice: 
   - Possibilité d'ajouter, modifier ou supprimer une série de la base de données 
