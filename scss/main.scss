@@ -1,6 +1,7 @@
 $textcolor : #7284A8; 
 $bgColor: #1B1B1B; 
 $lightGrey: #333333; 
+$greenColor: #33d66c; 
 $borderRadius : 5px; 
 
 
@@ -27,6 +28,28 @@ body {
   color: $textcolor;
 }
 
+main {
+  margin: 30px;
+  min-height: calc(100vh - 77px);
+}
+
+.btnList {
+  margin: 30px 0 40px;
+  width: 50%;
+  align-self: center;
+}
+
+.randomBtn {
+  padding: 15px;
+  background-color: $greenColor; 
+  width: 25%; 
+  align-self: center;
+  color: white;
+  border-radius: $borderRadius; 
+  border: none;
+  font-size: 25px; 
+  outline: none; 
+}
 
 .button {
   background-color: $lightGrey; 
@@ -37,16 +60,25 @@ body {
   border-radius: $borderRadius; 
 }
 
-.btnList {
-  margin: 30px 0 40px;
-  width: 50%;
-  align-self: center;
-}
+
 
 /*   HEADER   */
 
 .mainHeader {
-  padding: 20px; 
+  padding: 10px 3.5%; 
+  border-bottom: 4px solid $lightGrey; 
+  background-color: $lightGrey; 
+  h1 {
+    flex: 1;
+    align-self: center;
+  }
+  img {
+    flex: 1;
+  }
+  p {
+    flex: 1;
+    text-align: right;
+  }
 }
 
 
@@ -62,13 +94,19 @@ body {
 }
 
 .showTitle {
-  flex-basis: 80%; 
+  flex-basis: 85%; 
   color: white;
 }
 
 .showRating {
-  flex-basis: 20%; 
+  flex-basis: 10%; 
   align-self: center;
+  font-size: 16px; 
+  color: white; 
+}
+
+.ten {
+  font-size: 12px; 
 }
 
 .showGenre {

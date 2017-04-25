@@ -16,6 +16,26 @@ body {
   background-color: #1B1B1B;
   color: #7284A8; }
 
+main {
+  margin: 30px;
+  min-height: calc(100vh - 77px); }
+
+.btnList {
+  margin: 30px 0 40px;
+  width: 50%;
+  align-self: center; }
+
+.randomBtn {
+  padding: 15px;
+  background-color: #33d66c;
+  width: 25%;
+  align-self: center;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  font-size: 25px;
+  outline: none; }
+
 .button {
   background-color: #333333;
   padding: 10px;
@@ -24,14 +44,19 @@ body {
   color: white;
   border-radius: 5px; }
 
-.btnList {
-  margin: 30px 0 40px;
-  width: 50%;
-  align-self: center; }
-
 /*   HEADER   */
 .mainHeader {
-  padding: 20px; }
+  padding: 10px 3.5%;
+  border-bottom: 4px solid #333333;
+  background-color: #333333; }
+  .mainHeader h1 {
+    flex: 1;
+    align-self: center; }
+  .mainHeader img {
+    flex: 1; }
+  .mainHeader p {
+    flex: 1;
+    text-align: right; }
 
 /*   SHOW ARTICLES   */
 .showCard {
@@ -43,12 +68,17 @@ body {
   border-radius: 5px; }
 
 .showTitle {
-  flex-basis: 80%;
+  flex-basis: 85%;
   color: white; }
 
 .showRating {
-  flex-basis: 20%;
-  align-self: center; }
+  flex-basis: 10%;
+  align-self: center;
+  font-size: 16px;
+  color: white; }
+
+.ten {
+  font-size: 12px; }
 
 .showGenre {
   flex-basis: 30%; }

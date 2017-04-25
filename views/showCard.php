@@ -1,65 +1,17 @@
-<article class="showCard flexColumn">
-  <header class="flex flexWrap">
-    <h1 class="showTitle">Lorem Ipsum</h1>
-    <span class="showRating">7.5/10</span>
-    <span class="showGenre">Action</span>
-    <span class="showYear">2017</span>
-  </header>
-  <img src="img/blackMirror.jpg"  height="150" class="showImg selfCenter">
-  <p class="showDescr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-</article>
+<section class="flex flexWrap">
+  <?php foreach ($shows as $show) { ?>
+  <article class="showCard flexColumn">
+    <header class=" flexWrap">
+      <div class="flex justifyBetween">
+        <h1 class="showTitle"><?= $show['show_title'] ?></h1>
+        <p class="showRating"><?= $show['show_rating']?><span class="ten">/10</span></p>
+      </div>
+      <span class="showGenre"><?= $show['show_genre']?></span>
+      <span class="showYear">(<?= $show['show_year']?>)</span>
+    </header>
+    <img src="img/<?= $show['show_img']?>"  height="200" class="showImg selfCenter">
+    <p class="showDescr"><?= $show['show_descr']?> </p>
+  </article>
 
-<article class="showCard flexColumn">
-  <header class="flex flexWrap">
-    <h1 class="showTitle">Lorem Ipsum</h1>
-    <span class="showRating">7.5/10</span>
-    <span class="showGenre">Action</span>
-    <span class="showYear">2017</span>
-  </header>
-  <img src="img/blackMirror.jpg"  height="150" class="showImg selfCenter">
-  <p class="showDescr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-</article>
-
-<article class="showCard flexColumn">
-  <header class="flex flexWrap">
-    <h1 class="showTitle">Lorem Ipsum</h1>
-    <span class="showRating">7.5/10</span>
-    <span class="showGenre">Action</span>
-    <span class="showYear">2017</span>
-  </header>
-  <img src="img/blackMirror.jpg"  height="150" class="showImg selfCenter">
-  <p class="showDescr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-</article>
-
-<article class="showCard flexColumn">
-  <header class="flex flexWrap">
-    <h1 class="showTitle">Lorem Ipsum</h1>
-    <span class="showRating">7.5/10</span>
-    <span class="showGenre">Action</span>
-    <span class="showYear">2017</span>
-  </header>
-  <img src="img/blackMirror.jpg"  height="150" class="showImg selfCenter">
-  <p class="showDescr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-</article>
-
-<article class="showCard flexColumn">
-  <header class="flex flexWrap">
-    <h1 class="showTitle">Lorem Ipsum</h1>
-    <span class="showRating">7.5/10</span>
-    <span class="showGenre">Action</span>
-    <span class="showYear">2017</span>
-  </header>
-  <img src="img/blackMirror.jpg"  height="150" class="showImg selfCenter">
-  <p class="showDescr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-</article>
-
-<article class="showCard flexColumn">
-  <header class="flex flexWrap">
-    <h1 class="showTitle">Lorem Ipsum</h1>
-    <span class="showRating">7.5/10</span>
-    <span class="showGenre">Action</span>
-    <span class="showYear">2017</span>
-  </header>
-  <img src="img/blackMirror.jpg"  height="150" class="showImg selfCenter">
-  <p class="showDescr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-</article>
+  <?php } ?>
+</section>

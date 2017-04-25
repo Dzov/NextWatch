@@ -7,22 +7,24 @@
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-
+  <!-- Header -->
   <?php include 'views/header.php' ?>
 
   <main class="flexColumn">
+
+    <button class="randomBtn">Find a random show !</button>
     <ul class="btnList flex justifyAround">
       <li class="button">Genre</li>
       <li class="button">Year</li>
-      <li class="button">Random Show</li>
       <li class="button">Highest Ratings</li>
     </ul>
-    <h2 class="selfCenter">Here is a wide variety to choose from</h2>
-    <section class="flex flexWrap">
-      <?php include "views/showCard.php" ?>
-    </section>
+    <h2 class="selfCenter">Here are a few suggestions to choose from</h2>
+
+    <!-- TV show cards section -->
+    <?php include "views/showCard.php" ?>
   </main>
 
+  <!-- Footer -->
   <?php include 'views/footer.php' ?>
 </body>
 </html>
