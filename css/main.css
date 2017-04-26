@@ -69,12 +69,30 @@ main {
   background-color: #333333; }
   .mainHeader h1 {
     flex: 1;
-    align-self: center; }
+    align-self: center;
+    font-size: 25px; }
   .mainHeader img {
-    flex: 1; }
-  .mainHeader p {
-    flex: 1;
+    flex: 5; }
+
+/* LogIn Form */
+.formContainer {
+  position: relative;
+  flex: 1; }
+  .formContainer p {
     text-align: right; }
+  .formContainer .loginForm {
+    /*display: none; */
+    position: absolute;
+    right: 0;
+    top: 150%; }
+    .formContainer .loginForm .loginBtn {
+      background-color: #33d66c;
+      margin-top: 5px;
+      padding: 5px;
+      color: white;
+      outline: none;
+      border: none;
+      border-radius: 5px; }
 
 /*   SHOW ARTICLES   */
 .showCard {

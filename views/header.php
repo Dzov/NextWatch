@@ -1,5 +1,14 @@
 <header class="mainHeader flex">
-  <h1><a href="index.php">NextWatch</a></h1>
+  <h1 class="brand"><a href="index.php">UpNext</a></h1>
   <img src="img/television.svg" alt='NextWatch Icon' height="90">
-  <p class="selfCenter"><a href="login.php">Log in</a></p>
+  <div class="formContainer selfCenter">
+    <?= headerLog(); ?>
+    <form class="loginForm flexColumn" action="index.php" method="post">
+      <label for="username">Username</label>
+      <input id="username" type="text" name="username" required="">
+      <label for="pwd">Password</label>
+      <input id="pwd" type="password" name="pwd" required="">
+      <input class="loginBtn" type="submit" name="submit" value="Login">
+    </form>
+  </div>
 </header>

@@ -3,11 +3,8 @@
   header("Access-Control-Allow-Origin: *");
   header("Content-Type: application/json; charset=UTF-8");
 
-  try {
-    $bdd = new PDO('mysql:host=localhost;dbname=nextwatch;charset=utf8', 'root', 'root'); 
-  } catch(Exception $e) {
-    die('Erreur : ' . $e->getMessage()); 
-  }
+
+  require 'dbAccess.php'; 
 
 
   $shows = $bdd->query('SELECT * FROM t_shows'); 

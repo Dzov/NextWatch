@@ -94,15 +94,37 @@ main {
   h1 {
     flex: 1;
     align-self: center;
+    font-size: 25px
   }
   img {
-    flex: 1;
-  }
-  p {
-    flex: 1;
-    text-align: right;
+    flex: 5;
   }
 }
+
+/* LogIn Form */
+.formContainer {
+  position: relative;
+  flex: 1;
+  p {
+    text-align: right;
+  }
+  .loginForm {
+  /*display: none; */
+  position: absolute;
+  right: 0; 
+  top: 150%;
+  .loginBtn {
+    background-color: $greenColor; 
+    margin-top: 5px; 
+    padding: 5px; 
+    color: white;
+    outline: none; 
+    border: none; 
+    border-radius: $borderRadius; 
+  }
+  }
+}
+
 
 
 /*   SHOW ARTICLES   */
