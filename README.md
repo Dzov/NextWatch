@@ -1,4 +1,4 @@
-# NextWatch
+# UpNext
 Projet de synthèse mi-formation: https://github.com/wasthishelpful/p20-projet-mi-formation
 
 ## Description du projet
