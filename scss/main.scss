@@ -39,18 +39,6 @@ main {
   align-self: center;
 }
 
-.randomBtn {
-  padding: 15px;
-  background-color: $greenColor; 
-  width: 25%; 
-  align-self: center;
-  color: white;
-  border-radius: $borderRadius; 
-  border: none;
-  font-size: 25px; 
-  outline: none; 
-}
-
 .button {
   background-color: $lightGrey; 
   padding: 10px; 
@@ -61,6 +49,13 @@ main {
   border-radius: $borderRadius; 
   outline: none; 
   border: none; 
+}
+
+.randomBtn {
+  @extend .button; 
+  background-color: $greenColor;  
+  font-size: 18px; 
+  width: 15%;
 }
 
 .dropDownMenu {
@@ -178,7 +173,7 @@ main {
   padding: 5px; 
 }
 
-.editBtn {
+.editBtn, .addBtn, .updateBtn {
   background-color: $greenColor; 
 }
 
@@ -197,12 +192,9 @@ main {
     margin-top: 10px; 
   }
   .updateBtn {
-    background-color: $greenColor; 
     margin-top: 10px; 
   }
 }
-
-
 
 
 /*   FOOTER   */

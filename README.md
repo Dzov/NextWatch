@@ -11,6 +11,7 @@ Réalisation d'un outil de recommandation de série TV
     * selon les notes d'IMDB
     * au hasard
 
+
 ### Fonctionnalités Back: 
 
 * Système de connexion 
@@ -19,8 +20,10 @@ Réalisation d'un outil de recommandation de série TV
     * Deconnexion
 
 * BackOffice 
+
     * Suppression, modification et ajout d'articles
 
+  
 ### Technos
 
 * Front 
@@ -32,6 +35,5 @@ Réalisation d'un outil de recommandation de série TV
     * PHP (Sessions)
     * SQL
     * Git
-
 
 

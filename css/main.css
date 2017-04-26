@@ -25,18 +25,7 @@ main {
   width: 50%;
   align-self: center; }
 
-.randomBtn {
-  padding: 15px;
-  background-color: #33d66c;
-  width: 25%;
-  align-self: center;
-  color: white;
-  border-radius: 5px;
-  border: none;
-  font-size: 25px;
-  outline: none; }
-
-.button, .dropContent, .controlBtn {
+.button, .randomBtn, .dropContent, .controlBtn {
   background-color: #333333;
   padding: 10px;
   width: 150px;
@@ -46,6 +35,11 @@ main {
   border-radius: 5px;
   outline: none;
   border: none; }
+
+.randomBtn {
+  background-color: #33d66c;
+  font-size: 18px;
+  width: 15%; }
 
 .dropDownMenu {
   position: relative; }
@@ -133,7 +127,7 @@ main {
   flex: .3;
   padding: 5px; }
 
-.editBtn {
+.editBtn, .addBtn, .updateBtn {
   background-color: #33d66c; }
 
 .deleteBtn {
@@ -146,7 +140,6 @@ main {
   font-size: 18px;
   margin-top: 10px; }
 .editForm .updateBtn {
-  background-color: #33d66c;
   margin-top: 10px; }
 
 /*   FOOTER   */

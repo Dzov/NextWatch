@@ -7,7 +7,6 @@ function login() {
   require 'model/dbAccess.php'; 
 
   if(!isset($_SESSION['username'])) {
-    $loggedIn = "loggedOut"; 
 
     if(isset($_POST['submit'])) {
       $users = $bdd->query('SELECT * FROM t_users'); 
@@ -26,7 +25,6 @@ function login() {
           }
         } 
       }
-      return $loggedIn; 
     }
     $users->closeCursor(); 
   }
@@ -41,6 +39,12 @@ function adminPanel() {
   }
 }
 
+function addShowBtn() {
+  if($_SESSION['admin'] == true) {
+    return "<button class='button addBtn'><a href='controllers/admin.php?create=true'>Add Show</a></button>"; 
+  } 
+}
+
 function headerDisplay() {
 
   if(isset($_SESSION['username'])) {
@@ -50,4 +54,3 @@ function headerDisplay() {
   }
 }
 
-?>

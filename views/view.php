@@ -30,7 +30,7 @@
 
   <main class="flexColumn" ng-controller="MainCtrl">
 
-    <button class="randomBtn" ng-click=''>Find a random show !</button>
+    <button class="randomBtn selfCenter" ng-click=''>Find a random show !</button>
     <div class="btnList flex justifyAround">
       <div class="dropDownMenu">
         <button class="button genreBtn">Genre</button>
@@ -45,6 +45,7 @@
       </div>
       <button class="button" ng-click='myFilter = {Rating : "9.5"}'>Highest Ratings</button>
       <button class="button" ng-click='myFilter = {Genre : ""} '>All shows</button>
+      <?= addShowBtn(); ?>
     </div>
     <!-- <h2 class="selfCenter">Here are a few suggestions to choose from</h2> -->
 
