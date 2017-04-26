@@ -31,26 +31,10 @@ function login() {
 }
 
 function adminPanel() {
-
   if($_SESSION['admin'] == true) {
     require "views/adminShowCard.php"; 
   } else {
     require "views/showCard.php";
-  }
-}
-
-function addShowBtn() {
-  if($_SESSION['admin'] == true) {
-    return "<button class='button addBtn'><a href='controllers/admin.php?create=true'>Add Show</a></button>"; 
-  } 
-}
-
-function headerDisplay() {
-
-  if(isset($_SESSION['username'])) {
-    return "<div class='flex justifyBetween'><p class='selfCenter'>Welcome, " . ucfirst($_SESSION['username']) . "</p><p><a href='controllers/logout.php'>Log Out</a></div>";  
-  } else {
-    return "<p class='selfCenter'>Log In</p>"; 
   }
 }
 

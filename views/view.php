@@ -15,15 +15,22 @@
   <!-- Header -->
   <header class="mainHeader flex">
     <h1 class="brand"><a href="index.php">UpNext</a></h1>
-    <img src="img/television.svg" alt='NextWatch Icon' height="90">
-    <div class="formContainer selfCenter">
-      <?= headerDisplay(); ?>
-      <form class="loginForm flexColumn" action="index.php" method="post">
+    <img src="img/television.svg" alt='NextWatch Icon' height="60">
+    <div class="loginFormContainer selfCenter">
+      <?php if(isset($_SESSION['username'])) { ?>
+      <div class='flex justifyBetween'>
+        <p class='selfCenter'>Welcome, <?= ucfirst($_SESSION['username']) ?></p>
+        <p><a href='controllers/logout.php'>Log Out</a></p>
+      </div>  
+      <?php } else { ?>
+      <p class='selfCenter loginBtn' ng-click='show= !show'><a href="#">Log In</a></p> 
+      <?php } ?>
+      <form class="loginForm form flexColumn" action="index.php" method="post" ng-show='show'>
         <label for="username">Username</label>
         <input id="username" type="text" name="username" required="">
         <label for="pwd">Password</label>
         <input id="pwd" type="password" name="pwd" required="">
-        <input class="loginBtn" type="submit" name="submit" value="Login">
+        <input class="greenBg formBtn" type="submit" name="submit" value="Login">
       </form>
     </div>
   </header>
@@ -33,8 +40,8 @@
     <button class="randomBtn selfCenter" ng-click=''>Find a random show !</button>
     <div class="btnList flex justifyAround">
       <div class="dropDownMenu">
-        <button class="button genreBtn">Genre</button>
-        <ul class="dropContent">
+        <button class="btn" ng-click='show=!show'>Genre</button>
+        <ul class="dropContent btn" ng-show='show'>
           <li ng-click='myFilter = {Genre : "Adventure"}'>Adventure</li>
           <li ng-click='myFilter = {Genre : "Animation"}'>Animation</li>
           <li ng-click='myFilter = {Genre : "Comedy"}'>Comedy</li>
@@ -43,9 +50,11 @@
           <li ng-click='myFilter = {Genre : "Sci-Fi"}'>Sci-Fi</li>
         </ul>
       </div>
-      <button class="button" ng-click='myFilter = {Rating : "9.5"}'>Highest Ratings</button>
-      <button class="button" ng-click='myFilter = {Genre : ""} '>All shows</button>
-      <?= addShowBtn(); ?>
+      <button class="btn" ng-click='myFilter = {Rating : "9.5"}'>Highest Ratings</button>
+      <button class="btn" ng-click='myFilter = {Genre : ""} '>All shows</button>
+      <?php if($_SESSION['admin'] == true) { ?>
+      <button class='addBtn btn '><a href='controllers/admin.php?create=true'>Add Show</a></button> 
+      <?php } ?>
     </div>
     <!-- <h2 class="selfCenter">Here are a few suggestions to choose from</h2> -->
 

@@ -15,29 +15,25 @@
 
   <header class="mainHeader flex">
     <h1 class="brand"><a href="../index.php">UpNext</a></h1>
-    <img src="../img/television.svg" alt='NextWatch Icon' height="90">
-    <div class="formContainer selfCenter">
-      <div class='flex justifyBetween'><p class='selfCenter'>Welcome, <?= ucfirst($_SESSION['username']) ?> </p><p><a href='../controllers/logout.php'>Log Out</a></div>
-      <form class="loginForm flexColumn" action="../index.php" method="post">
-        <label for="username">Username</label>
-        <input id="username" type="text" name="username" required="">
-        <label for="pwd">Password</label>
-        <input id="pwd" type="password" name="pwd" required="">
-        <input class="loginBtn" type="submit" name="submit" value="Login">
-      </form>
+    <img src="../img/television.svg" alt='NextWatch Icon' height="60">
+    <div class="loginFormContainer selfCenter">
+      <div class='flex justifyBetween'>
+        <p class='selfCenter'>Welcome, <?= ucfirst($_SESSION['username']) ?></p>
+        <p><a href='../controllers/logout.php'>Log Out</a></p>
+      </div>
     </div>
   </header>
 
   <main class="flex alignItemsCenter">
     <article class="showCard flexColumn">
       <?php 
-        if(isset($_GET['update'])) {
-          include 'updateForm.php'; 
-        } elseif(isset($_GET['create'])) {
-          include 'createForm.php'; 
-        } else {
-          echo "ERROR 404"; 
-        }
+      if(isset($_GET['update'])) {
+        include 'updateForm.php'; 
+      } elseif(isset($_GET['create'])) {
+        include 'createForm.php'; 
+      } else {
+        echo "ERROR 404"; 
+      }
       ?>
     </article>
   </main>

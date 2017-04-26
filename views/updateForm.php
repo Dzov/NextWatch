@@ -1,4 +1,4 @@
-<form action="" method="post" class="flexColumn editForm">
+<form action="" method="post" class="flexColumn form">
   <?php while($show = $shows->fetch()) { ?>
   <label for="title">Title</label>
   <input type="text" name="title" id="title" value="<?= $show['show_title'] ?>">
@@ -14,5 +14,5 @@
 } 
 $shows->closeCursor(); 
 ?>
-<input type="submit" name="update" class="updateBtn button selfCenter" value="Update">
+<input type="submit" name="update" class="formBtn selfCenter" value="Update">
 </form>
