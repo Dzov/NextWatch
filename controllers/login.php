@@ -41,7 +41,7 @@ function adminPanel() {
   }
 }
 
-function headerLog() {
+function headerDisplay() {
 
   if(isset($_SESSION['username'])) {
     return "<div class='flex justifyBetween'><p class='selfCenter'>Welcome, " . ucfirst($_SESSION['username']) . "</p><p><a href='controllers/logout.php'>Log Out</a></div>";  

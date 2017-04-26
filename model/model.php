@@ -16,7 +16,8 @@
 
     if ($jsonObj != "") {$jsonObj .= ",";}
 
-    $jsonObj .= '{"Title" : "'  . $show["show_title"] . '",';
+    $jsonObj .= '{"Id" : "'  . $show["show_id"] . '",';
+    $jsonObj .= '"Title" : "'   . $show["show_title"]        . '",';
     $jsonObj .= '"Description" : "'   . $show["show_descr"]        . '",';
     $jsonObj .= '"Genre" : "'   . $show["show_genre"]        . '",';
     $jsonObj .= '"Year" : "'   . $show["show_year"]        . '",';

@@ -35,6 +35,10 @@
   align-content: space-between;
 }
 
+.alignEnd {
+  align-items: flex-end;
+}
+
 .alignContentCenter {
   align-content: center;
 }

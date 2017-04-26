@@ -2,11 +2,11 @@
 /**** Delete a show from database ****/
 require "dbAccess.php"; 
 
-// if(isset($_GET['id'])) {
-//   $response = $bdd->prepare('DELETE FROM hiking WHERE id = :getID'); 
-//   $response->execute(array('getID' => $_GET['id'])); 
-// }
+if(isset($_GET['delete'])) {
+  $response = $bdd->prepare('DELETE FROM t_shows WHERE show_id = :getID'); 
+  $response->execute(array('getID' => $_GET['delete'])); 
+}
 
-header('Location: read.php');
+header('Location: ../index.php');
 
 ?>

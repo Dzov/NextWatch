@@ -36,7 +36,7 @@ main {
   font-size: 25px;
   outline: none; }
 
-.button, .dropContent {
+.button, .dropContent, .controlBtn {
   background-color: #333333;
   padding: 10px;
   width: 150px;
@@ -124,6 +124,30 @@ main {
 
 .showDescr {
   text-align: justify; }
+
+/* ADMIN PANEL */
+.controlsList {
+  margin-bottom: 15px; }
+
+.controlBtn {
+  flex: .3;
+  padding: 5px; }
+
+.editBtn {
+  background-color: #33d66c; }
+
+.deleteBtn {
+  background-color: red; }
+
+/* editForm */
+.editForm input, .editForm textarea {
+  padding: 10px; }
+.editForm label {
+  font-size: 18px;
+  margin-top: 10px; }
+.editForm .updateBtn {
+  background-color: #33d66c;
+  margin-top: 10px; }
 
 /*   FOOTER   */
 footer {

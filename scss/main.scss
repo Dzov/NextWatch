@@ -166,6 +166,45 @@ main {
   text-align: justify;
 }
 
+/* ADMIN PANEL */
+
+.controlsList {
+  margin-bottom: 15px; 
+}
+
+.controlBtn {
+  @extend .button; 
+  flex: .3;
+  padding: 5px; 
+}
+
+.editBtn {
+  background-color: $greenColor; 
+}
+
+.deleteBtn {
+  background-color: red; 
+}
+
+/* editForm */
+
+.editForm {
+  input, textarea {
+    padding: 10px;  
+  }
+  label {
+    font-size: 18px; 
+    margin-top: 10px; 
+  }
+  .updateBtn {
+    background-color: $greenColor; 
+    margin-top: 10px; 
+  }
+}
+
+
+
+
 /*   FOOTER   */
 
 footer {
