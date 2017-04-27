@@ -1,7 +1,7 @@
-var bddLength = myShows.length; 
+// var app = angular.module('app', []);
 
-myApp.filter('random', function() {
-  return function () {
-    var randNum = Math.floor((Math.random() * bddLength) + 1);
-  }
-}); 
+// myApp.filter('sortRating', function () {
+//   return function (item) {
+//     return item.toUpperCase();
+//   };
+// });

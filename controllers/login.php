@@ -3,8 +3,7 @@ session_start();
 
 // User authentification
 
-function login() {
-  require 'model/dbAccess.php'; 
+  require './model/dbAccess.php'; 
 
   if(!isset($_SESSION['username'])) {
 
@@ -26,7 +25,5 @@ function login() {
         } 
       }
     }
-    $users->closeCursor(); 
   }
-}
 

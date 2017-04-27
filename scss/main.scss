@@ -13,9 +13,9 @@ $redColor: #D80914;
   margin: 0; 
   padding: 0; 
   font-family: -apple-system, BlinkMacSystemFont, 
-    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", 
-    "Fira Sans", "Droid Sans", "Helvetica Neue", 
-    sans-serif;
+  "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", 
+  "Fira Sans", "Droid Sans", "Helvetica Neue", 
+  sans-serif;
 }
 
 ul {
@@ -132,9 +132,6 @@ main {
   }
 }
 
-
-
-
 /*  NAV  */
 
 .btnList {
@@ -182,39 +179,37 @@ main {
   background-color: $lightGrey; 
   padding: 15px; 
   border-radius: $borderRadius; 
+  header {
+    margin-bottom: 5px; 
+    color: white;
+    .showTitle {
+      font-size: 18px; 
+      flex-basis: 85%; 
+    }
+    .showRating {
+      flex-basis: 10%; 
+      font-size: 15px; 
+      margin-top: 2px; 
+      color: #F3CE00;
+      .ten {
+        font-size: 12px; 
+        color: #F3CE00;
+      }
+    }
+    span {
+      font-size: 14px; 
+      flex-basis: 30%; 
+      color: $textcolor; 
+    }
+  }
+  .showImg {
+    margin: 10px 0;
+  }
+  .showDescr {
+    text-align: justify;
+    font-size: 15px; 
+  }
 }
-
-.showTitle {
-  flex-basis: 85%; 
-  color: white;
-}
-
-.showRating {
-  flex-basis: 10%; 
-  align-self: center;
-  font-size: 16px; 
-  color: white; 
-}
-
-.ten {
-  font-size: 12px; 
-}
-
-.showGenre {
-  flex-basis: 30%; 
-}
-
-.showImg {
-  margin: 10px 0;
-}
-
-.showDescr {
-  text-align: justify;
-}
-
-
-
-
 
 
 /* ADMIN PANEL */
@@ -222,9 +217,6 @@ main {
 .controlsList {
   margin-bottom: 15px; 
 }
-
-
-
 
 
 /*   FOOTER   */

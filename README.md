@@ -9,7 +9,7 @@ Réalisation d'un outil de recommandation de série TV
 * Recommandations 
     * par genre 
     * selon les notes d'IMDB
-    * au hasard
+    * au hasard (à venir)
 
 
 ### Fonctionnalités Back: 

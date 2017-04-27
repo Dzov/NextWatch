@@ -129,28 +129,29 @@ main {
   background-color: #333333;
   padding: 15px;
   border-radius: 5px; }
-
-.showTitle {
-  flex-basis: 85%;
-  color: white; }
-
-.showRating {
-  flex-basis: 10%;
-  align-self: center;
-  font-size: 16px;
-  color: white; }
-
-.ten {
-  font-size: 12px; }
-
-.showGenre {
-  flex-basis: 30%; }
-
-.showImg {
-  margin: 10px 0; }
-
-.showDescr {
-  text-align: justify; }
+  .showCard header {
+    margin-bottom: 5px;
+    color: white; }
+    .showCard header .showTitle {
+      font-size: 18px;
+      flex-basis: 85%; }
+    .showCard header .showRating {
+      flex-basis: 10%;
+      font-size: 15px;
+      margin-top: 2px;
+      color: #F3CE00; }
+      .showCard header .showRating .ten {
+        font-size: 12px;
+        color: #F3CE00; }
+    .showCard header span {
+      font-size: 14px;
+      flex-basis: 30%;
+      color: #7284A8; }
+  .showCard .showImg {
+    margin: 10px 0; }
+  .showCard .showDescr {
+    text-align: justify;
+    font-size: 15px; }
 
 /* ADMIN PANEL */
 .controlsList {

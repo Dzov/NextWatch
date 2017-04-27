@@ -51,7 +51,7 @@
           <li ng-click='myFilter = {Genre : "Sci-Fi"}'>Sci-Fi</li>
         </ul>
       </div>
-      <button class="btn navBtn" ng-click='myFilter = {Rating > 8.0 }'>Highest Ratings</button>
+      <button class="btn navBtn" ng-click='myFilter = {Rating : "9.5"}'>Highest Ratings</button>
       <button class="btn navBtn" ng-click='myFilter = {Genre : ""} '>All shows</button>
       <?php if($_SESSION['admin'] == true) { ?>
       <button class='addBtn btn navBtn'><a href='controllers/admin.php?create=true'>Add Show</a></button> 
