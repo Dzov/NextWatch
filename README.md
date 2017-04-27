@@ -10,8 +10,8 @@ Réalisation d'un outil de recommandation de série TV
     * par genre 
     * selon les notes d'IMDB
     * au hasard (à venir)
-
-
+    
+* Responsive Design
 ### Fonctionnalités Back: 
 
 * Système de connexion 
@@ -23,8 +23,9 @@ Réalisation d'un outil de recommandation de série TV
 * BackOffice 
 
     * Suppression, modification et ajout d'articles
+    
+* Architecture MVC
 
-  
 ### Technos
 
 * Front 
