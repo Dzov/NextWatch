@@ -1,0 +1,13 @@
+@media all and (max-width: 1300px) {
+  .navBtn {
+    margin-top: 5px; } }
+@media all and (max-width: 730px) {
+  .randomBtn {
+    width: 60%; } }
+@media all and (max-width: 1200px) {
+  .loginFormContainer div {
+    flex-direction: column; }
+    .loginFormContainer div p {
+      align-self: flex-end; } }
+
+/*# sourceMappingURL=responsive.css.map */

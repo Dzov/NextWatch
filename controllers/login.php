@@ -30,11 +30,3 @@ function login() {
   }
 }
 
-function adminPanel() {
-  if($_SESSION['admin'] == true) {
-    require "views/adminShowCard.php"; 
-  } else {
-    require "views/showCard.php";
-  }
-}
-

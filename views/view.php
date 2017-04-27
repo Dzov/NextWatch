@@ -7,6 +7,7 @@
   <title>UpNext</title>
   <link rel="stylesheet" type="text/css" href="css/flex.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
   <script src="js/controllers/controller.js"></script>
   <script src="js/filters/filters.js"></script>
@@ -39,9 +40,9 @@
 
     <button class="randomBtn selfCenter" ng-click=''>Find a random show !</button>
     <div class="btnList flex justifyAround">
-      <div class="dropDownMenu">
+      <div class="dropDownMenu navBtn">
         <button class="btn" ng-click='show=!show'>Genre</button>
-        <ul class="dropContent btn" ng-show='show'>
+        <ul class="dropContent btn navBtn" ng-show='show'>
           <li ng-click='myFilter = {Genre : "Adventure"}'>Adventure</li>
           <li ng-click='myFilter = {Genre : "Animation"}'>Animation</li>
           <li ng-click='myFilter = {Genre : "Comedy"}'>Comedy</li>
@@ -50,16 +51,16 @@
           <li ng-click='myFilter = {Genre : "Sci-Fi"}'>Sci-Fi</li>
         </ul>
       </div>
-      <button class="btn" ng-click='myFilter = {Rating : "9.5"}'>Highest Ratings</button>
-      <button class="btn" ng-click='myFilter = {Genre : ""} '>All shows</button>
+      <button class="btn navBtn" ng-click='myFilter = {Rating > 8.0 }'>Highest Ratings</button>
+      <button class="btn navBtn" ng-click='myFilter = {Genre : ""} '>All shows</button>
       <?php if($_SESSION['admin'] == true) { ?>
-      <button class='addBtn btn '><a href='controllers/admin.php?create=true'>Add Show</a></button> 
+      <button class='addBtn btn navBtn'><a href='controllers/admin.php?create=true'>Add Show</a></button> 
       <?php } ?>
     </div>
     <!-- <h2 class="selfCenter">Here are a few suggestions to choose from</h2> -->
 
     <!-- TV show cards section -->
-    <?php adminPanel(); ?>
+    <?php require "views/showCard.php"; ?>
   </main>
 
   <!-- Footer -->

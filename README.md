@@ -16,8 +16,9 @@ Réalisation d'un outil de recommandation de série TV
 
 * Système de connexion 
     * Un utilisateur a la possibilité de se connecter mais le contenu est également visible sans compte
+    * A la connexion une session utilisateur est créée
     * Seul un administrateur a accès au backoffice
-    * Deconnexion
+    * Deconnexion - la session est supprimée 
 
 * BackOffice 
 
