@@ -5,9 +5,9 @@
 <head>
   <meta charset="utf-8">
   <title>UpNext</title>
-  <link rel="stylesheet" type="text/css" href="css/flex.css">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  <link rel="stylesheet" type="text/css" href="views/css/flex.css">
+  <link rel="stylesheet" type="text/css" href="views/css/main.css">
+  <link rel="stylesheet" type="text/css" href="views/css/responsive.css">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
   <script src="js/controllers/controller.js"></script>
   <script src="js/filters/filters.js"></script>
