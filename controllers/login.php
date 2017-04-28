@@ -7,7 +7,7 @@ session_start();
 
   if(!isset($_SESSION['username'])) {
 
-    if(isset($_POST['submit'])) {
+    if(isset($_POST['login'])) {
       $users = $bdd->query('SELECT * FROM t_users'); 
 
       while($user = $users->fetch()) {

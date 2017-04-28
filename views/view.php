@@ -18,20 +18,37 @@
     <h1 class="brand"><a href="index.php">UpNext</a></h1>
     <img src="img/television.svg" alt='NextWatch Icon' height="60">
     <div class="loginFormContainer selfCenter">
+      <!-- Changes header display if user is logged in -->
       <?php if(isset($_SESSION['username'])) { ?>
       <div class='flex justifyBetween'>
         <p class='selfCenter'>Welcome, <?= ucfirst($_SESSION['username']) ?></p>
         <p><a href='controllers/logout.php'>Log Out</a></p>
       </div>  
       <?php } else { ?>
-      <p class='selfCenter loginBtn' ng-click='show= !show'><a href="#">Log In</a></p> 
+      <div class='flex justifyBetween'>
+        <p class='selfCenter loginBtn' ng-click='showLogin= !showLogin'><a href="#">Log In</a></p> 
+        <p class='selfCenter signupBtn' ng-click='showSignup= !showSignup'><a href="#">Sign Up</a></p> 
+      </div>
       <?php } ?>
-      <form class="loginForm form flexColumn" action="index.php" method="post" ng-show='show'>
+      <!-- Login Form -->
+      <form class="loginForm form flexColumn" action="index.php" method="post" ng-show='showLogin'>
         <label for="username">Username</label>
         <input id="username" type="text" name="username" required="">
         <label for="pwd">Password</label>
         <input id="pwd" type="password" name="pwd" required="">
-        <input class="greenBg formBtn" type="submit" name="submit" value="Login">
+        <input class="greenBg formBtn" type="submit" name="login" value="Login">
+      </form>
+      <!-- Sign Up Form -->
+      <form class="loginForm form flexColumn" action="index.php" method="post" ng-show='showSignup'>
+        <label for="firstName">First Name</label>
+        <input id="firstName" type="text" name="firstName" required="">
+        <label for="lastName">Last Name</label>
+        <input id="lastName" type="text" name="lastName" required="">
+        <label for="newUsername">Username</label>
+        <input id="newUsername" type="text" name="newUsername" required="">
+        <label for="newPwd">Password</label>
+        <input id="newPwd" type="password" name="newPwd" required="">
+        <input class="greenBg formBtn" type="submit" name="signup" value="Sign Up">
       </form>
     </div>
   </header>

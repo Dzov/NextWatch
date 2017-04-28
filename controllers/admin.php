@@ -9,6 +9,7 @@ if(isset($_GET['update'])) {
 
 if(isset($_GET['create'])) {
   require '../model/create.php'; 
+  createArticle(); 
   require '../views/editView.php'; 
 }
 
