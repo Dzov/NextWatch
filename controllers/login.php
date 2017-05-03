@@ -8,13 +8,12 @@ session_start();
   if(!isset($_SESSION['username'])) {
 
     if(isset($_POST['login'])) {
-      $users = $bdd->query('SELECT * FROM t_users'); 
+      $users = $bdd->query('SELECT * FROM t_users WHERE '); 
 
       while($user = $users->fetch()) {
       // If user exists in db, start session
         if($user['username'] == $_POST['username'] && $user['pwd'] == $_POST['pwd']) {
           $_SESSION['username'] = $_POST['username']; 
-          $_SESSION['password'] = sha1($_POST['password']);
 
         // Checks whether user is an admin
           if($user['admin'] == 1) {

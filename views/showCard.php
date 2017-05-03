@@ -14,11 +14,10 @@
       <span class="showGenre">{{show.Genre}}</span>
       <span class="showYear">({{show.Year}})</span>
     </header>
-    <img src="img/{{show.Image}}"  height="200" class="showImg selfCenter">
+    <!-- <?= '<img height="200" class="showImg selfCenter" src="data:'.utf8_encode($link['type']).';base64,'.base64_encode(stripslashes($link['content'])).'"/>';?> -->
+    <img src="views/img/{{show.Image}}"  height="200" class="showImg selfCenter">
     <p class="showDescr">{{show.Description}}</p>
   </article>
 </section>
-
-
 
 

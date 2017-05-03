@@ -5,18 +5,18 @@
 <head>
   <meta charset="utf-8">
   <title>Admin Panel</title>
-  <link rel="stylesheet" type="text/css" href="../css/flex.css">
-  <link rel="stylesheet" type="text/css" href="../css/main.css">
-  <link rel="stylesheet" type="text/css" href="../css/responsive.css">
+  <link rel="stylesheet" type="text/css" href="../views/css/flex.css">
+  <link rel="stylesheet" type="text/css" href="../views/css/main.css">
+  <link rel="stylesheet" type="text/css" href="../views/css/responsive.css">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
-  <script src="js/controllers/controller.js"></script>
-  <script src="js/filters/filters.js"></script>
+  <script src="../views/js/controllers/controller.js"></script>
+  <script src="../views/js/filters/filters.js"></script>
 </head>
 <body>
 
   <header class="mainHeader flex">
     <h1 class="brand"><a href="../index.php">UpNext</a></h1>
-    <img src="../img/television.svg" alt='NextWatch Icon' height="60">
+    <img src="../views/img/television.svg" alt='NextWatch Icon' height="60">
     <div class="loginFormContainer selfCenter">
       <div class='flex justifyBetween'>
         <p class='selfCenter'>Welcome, <?= ucfirst($_SESSION['username']) ?></p>

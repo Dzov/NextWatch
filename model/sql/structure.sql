@@ -8,7 +8,11 @@ create table t_shows (
   show_genre varchar(100) not null, 
   show_year int(4) not null,
   show_rating float(2) not null, 
-  show_img varchar(500) not null
+  show_img varchar(500) not null, 
+  img_name varchar(50) not null,
+  img_type varchar(50) not null,
+  img_size int(11) not null,
+  img_content mediumblob not null
 ) engine=innodb character set utf8 collate utf8_unicode_ci; 
 
 create table t_users (

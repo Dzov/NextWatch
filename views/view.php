@@ -9,14 +9,14 @@
   <link rel="stylesheet" type="text/css" href="views/css/main.css">
   <link rel="stylesheet" type="text/css" href="views/css/responsive.css">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
-  <script src="js/controllers/controller.js"></script>
-  <script src="js/filters/filters.js"></script>
+  <script src="views/js/controllers/controller.js"></script>
+  <script src="views/js/filters/filters.js"></script>
 </head>
 <body ng-app="myApp">
   <!-- Header -->
   <header class="mainHeader flex">
     <h1 class="brand"><a href="index.php">UpNext</a></h1>
-    <img src="img/television.svg" alt='NextWatch Icon' height="60">
+    <img src="views/img/television.svg" alt='NextWatch Icon' height="60">
     <div class="loginFormContainer selfCenter">
       <!-- Changes header display if user is logged in -->
       <?php if(isset($_SESSION['username'])) { ?>
@@ -55,7 +55,7 @@
 
   <main class="flexColumn" ng-controller="MainCtrl">
 
-    <button class="randomBtn selfCenter" ng-click=''>Find a random show !</button>
+    <button class="randomBtn selfCenter" ng-click='myFilter = randomFilter'>Find a random show !</button>
     <div class="btnList flex justifyAround">
       <div class="dropDownMenu navBtn">
         <button class="btn" ng-click='show=!show'>Genre</button>

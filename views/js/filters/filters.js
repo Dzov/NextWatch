@@ -1,7 +1,7 @@
-// var app = angular.module('app', []);
+var app = angular.module('app', []);
 
-// myApp.filter('sortRating', function () {
-//   return function (item) {
-//     return item.toUpperCase();
-//   };
-// });
+app.filter('randomFilter', function (randomFilter) {
+  return function (items) {
+    return items[0]; 
+  };
+});
